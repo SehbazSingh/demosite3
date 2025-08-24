@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Codezen: Campus Launch Event</title>
+    <meta name="description" content="Join Codezen's launch event — a mobile-first site with details, agenda, and quick registration." />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <!-- Update these data-* attributes with your real event details -->
+  <body
+    data-event-title="Codezen Launch & Hack Night"
+    data-event-start="2025-09-20T17:00:00"
+    data-event-end="2025-09-20T20:30:00"
+    data-event-location="Main Auditorium, University Campus"
+  >
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">CZ</div>
+          <div class="brand-text">
+            <strong>CodeZen</strong>
+            <span class="muted">Community</span>
+          </div>
+        </div>
+
+        <div class="event-meta" aria-label="Event meta">
+          <span class="pill when" id="eventWhen">Sep 20, 2025 · 5:00 PM</span>
+          <span class="pill where" id="eventWhere">Main Auditorium</span>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container">
+        
+        <h1 class="title">Workshop By CodeZen</h1>
+        <p class="subtitle">
+          Meet, learn, and build with fellow enthusiasts.
+        </p>
+
+        <div class="cta-group">
+          <button class="btn btn-primary" id="openRegisterTop">Register now</button>
+          <button class="btn btn-ghost" id="addToCalendarTop" aria-describedby="calendarNote">Add to calendar</button>
+        </div>
+      </section>
+
+      <section class="highlights container" aria-label="Why attend">
+        <h2 class="section-title">Why attend</h2>
+        <ul class="cards">
+          <li class="card">
+            <div class="icon" aria-hidden="true">💡</div>
+            <h3>Lightning talks</h3>
+            <p>Short, practical sessions by student engineers and alumni.</p>
+          </li>
+          <li class="card">
+            <div class="icon" aria-hidden="true">🛠️</div>
+            <h3>Build sprint</h3>
+            <p>Pair up, pick a prompt, and prototype in under 90 minutes.</p>
+          </li>
+          <li class="card">
+            <div class="icon" aria-hidden="true">🤝</div>
+            <h3>Meet the crew</h3>
+            <p>Find collaborators, mentors, and future teammates.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="agenda container" aria-label="Agenda">
+        <h2 class="section-title">Agenda</h2>
+        <ol class="timeline">
+          <li>
+            <time>5:00 PM</time>
+            <div>
+              <strong>Doors open & check-in</strong>
+              <p class="muted">Grab a badge, meet people, and get set up.</p>
+            </div>
+          </li>
+          <li>
+            <time>5:30 PM</time>
+            <div>
+              <strong>Welcome + Roadmap</strong>
+              <p class="muted">What Codezen is building this semester.</p>
+            </div>
+          </li>
+          <li>
+            <time>6:00 PM</time>
+            <div>
+              <strong>Lightning Talks</strong>
+              <p class="muted">Quick hits on shipping projects fast.</p>
+            </div>
+          </li>
+          <li>
+            <time>7:00 PM</time>
+            <div>
+              <strong>Mini Hack</strong>
+              <p class="muted">Form teams, choose prompts, start building.</p>
+            </div>
+          </li>
+          <li>
+            <time>8:15 PM</time>
+            <div>
+              <strong>Demos + Wrap</strong>
+              <p class="muted">Show what you built and what's next.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="speakers container" aria-label="Speakers">
+        <h2 class="section-title">Speakers</h2>
+        <ul class="people">
+          <li class="person">
+            <div class="avatar" aria-hidden="true">A</div>
+            <div>
+              <strong>Alex Sharma</strong>
+              <p class="muted">Backend @ Startup, CS '24</p>
+            </div>
+          </li>
+          <li class="person">
+            <div class="avatar" aria-hidden="true">M</div>
+            <div>
+              <strong>Meera Joshi</strong>
+              <p class="muted">ML Research, EE '25</p>
+            </div>
+          </li>
+          <li class="person">
+            <div class="avatar" aria-hidden="true">R</div>
+            <div>
+              <strong>Rohit Singh</strong>
+              <p class="muted">Frontend Guild Lead, IT '26</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="venue container" aria-label="Venue">
+        <h2 class="section-title">Venue</h2>
+        <address class="address">
+          <strong id="venueName">Main Auditorium</strong><br />
+          University Campus<br />
+          <span class="muted">Bring your student ID for entry</span>
+        </address>
+        <div class="venue-actions">
+          <a class="btn btn-ghost" id="openMaps" href="#" target="_blank" rel="noopener">Open in Maps</a>
+          
+        </div>
+      </section>
+
+      <section class="faq container" aria-label="FAQ">
+        <h2 class="section-title">FAQ</h2>
+
+        <details class="accordion">
+          <summary>Is this event free?</summary>
+          <p>Yes. Just register and bring your student ID.</p>
+        </details>
+
+        <details class="accordion">
+          <summary>Do I need a team?</summary>
+          <p>No. You can join or form a team on the spot.</p>
+        </details>
+
+        <details class="accordion">
+          <summary>What should I bring?</summary>
+          <p>Your laptop, charger, and curiosity.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <strong>Codezen</strong>
+            <p class="muted small">Student-run community for builders.</p>
+          </div>
+          <div>
+            <p class="small">Questions? <a href="mailto:team@codezen.example">team@codezen.example</a></p>
+            <p class="small">Follow us on <a href="#" aria-label="Codezen Instagram">Instagram</a></p>
+          </div>
+        </div>
+        <p class="legal small muted">© <span id="year"></span> Codezen. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Sticky mobile CTA -->
+    <div class="cta-bar" role="region" aria-label="Quick actions">
+      <div class="cta-inner container">
+        <button class="btn btn-primary" id="openRegisterBottom" aria-label="Register now">Register now</button>
+        <button class="btn btn-ghost" id="addToCalendarBottom" aria-label="Add to calendar">Add to calendar</button>
+      </div>
+    </div>
+
+    <!-- Registration Modal -->
+    <div class="modal" id="registerModal" role="dialog" aria-modal="true" aria-labelledby="registerTitle" hidden>
+      <div class="modal-backdrop" data-close></div>
+      <div class="modal-card" role="document">
+        <div class="modal-header">
+          <h2 id="registerTitle">Register for Codezen Launch</h2>
+          <button class="icon-btn" id="closeRegister" aria-label="Close registration form">✕</button>
+        </div>
+
+        <form id="regForm" novalidate>
+          <div class="field">
+            <label for="fullName">Full name</label>
+            <input id="fullName" name="fullName" type="text" inputmode="text" autocomplete="name" required />
+            <p class="error" data-error-for="fullName"></p>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" inputmode="email" autocomplete="email" required />
+            <p class="error" data-error-for="email"></p>
+          </div>
+
+          <div class="field">
+            <label for="studentId">Student ID</label>
+            <input id="studentId" name="studentId" type="text" inputmode="numeric" autocomplete="off" required />
+            <p class="error" data-error-for="studentId"></p>
+          </div>
+
+          <div class="field">
+            <label for="department">Department</label>
+            <input id="department" name="department" type="text" inputmode="text" autocomplete="organization" />
+          </div>
+
+          <div class="field">
+            <label for="year">Year</label>
+            <select id="year" name="year" required>
+              <option value="" selected disabled>Select year</option>
+              <option>1st</option>
+              <option>2nd</option>
+              <option>3rd</option>
+              <option>4th+</option>
+            </select>
+            <p class="error" data-error-for="year"></p>
+          </div>
+
+          <div class="field checkbox">
+            <input id="consent" name="consent" type="checkbox" required />
+            <label for="consent">I agree to receive event-related emails.</label>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+            <button type="button" class="btn btn-ghost" data-close>Cancel</button>
+          </div>
+
+          <p class="small muted">We won't share your data. You can opt out anytime.</p>
+        </form>
+
+        <div class="success" id="successState" hidden role="status" aria-live="polite">
+          <div class="success-icon" aria-hidden="true">✅</div>
+          <h3>You're in!</h3>
+          <p>We've saved your registration on this device. You'll also get a copy by email if configured.</p>
+          <div class="form-actions">
+            <button class="btn" id="successCalendar">Add to calendar</button>
+            <button class="btn btn-ghost" data-close>Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
